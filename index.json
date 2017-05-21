@@ -1,0 +1,32 @@
+{ 
+    "compute": [  
+                {  "name": "db3","status":2},  
+                {   "name": "db1","status":1}  
+    ],  
+    "links": [  
+                {"flow": 1, "source": "zdata3", "target": "local"},   
+                {"flow": 5, "source": "zdata2", "target": "remote"},  
+                {"flow": 6, "source": "db3", "target": "switch-dfccbe"},  
+                {"flow": 9, "source": "zdata1", "target": "switch-dfccbe"},  
+                {"flow": 12, "source": "zdata2", "target": "switch-dfccbe"},   
+                {"flow": 87, "source": "db1", "target": "switch-dfccbe"},   
+                {"flow": 78, "source": "db1", "target": "switch-e67f1c"},   
+                {"flow": 123, "source": "zdata3", "target": "switch-dfccbe"},   
+                {"flow": 96, "source": "zdata1", "target": "switch-e67f1c"}  
+    ],   
+    "storage": [  
+                {"name": "zdata3","status":1},   
+                {"name": "zdata2","status":2},   
+                {"name": "zdata1","status":1}  
+    ],   
+    "switchs": [  
+                {"name": "local"},   
+                {"name": "remote"},   
+                {"name": "switch-dfccbe"},   
+                {"name": "switch-e67f1c"},  
+                {"name": "switch-dffdfgr"},   
+                {"name": "switch-e689frec"}  
+    ]  
+     
+     
+}  
